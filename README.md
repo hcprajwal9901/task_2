@@ -85,20 +85,15 @@ Access app in browser at http://localhost:8080.
 
 ### Jenkins pipeline automatically:
 
-Pulls code from GitHub
-
-Builds Docker image
-
-Runs the container
+- Pulls code from GitHub
+- Builds Docker image
+- Runs the container
 
 ### Configure Jenkins:
 
-Create a Pipeline project
+- Create a Pipeline project
+- Set Pipeline script from SCM
+- Provide GitHub repo and branch
+### Jenkinsfile path: Jenkinsfile
 
-Set Pipeline script from SCM
-
-Provide GitHub repo and branch
-
-Jenkinsfile path: Jenkinsfile
-
-### Run the pipeline and verify app running at http://<server-ip>:8080
+- Run the pipeline and verify app running at http://<server-ip>:8080
