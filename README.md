@@ -48,7 +48,7 @@ server.listen(port, hostname, () => {
 
 Clone the repository:
 
-```git clone https://github.com/<your-username>/<your-repo>.git
+```git clone https://github.com/hcprajwal9901/https://github.com/hcprajwal9901/task_2.git
 cd simple-node-app
 ```
 
@@ -97,3 +97,9 @@ Access app in browser at http://localhost:8080.
 ### Jenkinsfile path: Jenkinsfile
 
 - Run the pipeline and verify app running at http://<server-ip>:8080
+
+
+## Notes
+
+- Make sure Docker is installed and running on the Jenkins server.
+- Adjust ports in Dockerfile and Jenkinsfile if needed.  
