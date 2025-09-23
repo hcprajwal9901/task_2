@@ -1,7 +1,7 @@
 # Use official Node.js image
 FROM node:20-alpine
 
-# Create app directory
+# Set working directory
 WORKDIR /usr/src/app
 
 # Copy package.json and install dependencies
@@ -14,5 +14,5 @@ COPY . .
 # Expose port
 EXPOSE 8080
 
-# Run the app
+# Start the server
 CMD ["node", "app.js"]

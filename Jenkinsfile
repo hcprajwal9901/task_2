@@ -2,13 +2,14 @@ pipeline {
     agent any
 
     environment {
-        IMAGE_NAME = "task_2"
+        IMAGE_NAME = "simple-node-app"
         IMAGE_TAG = "latest"
     }
 
     stages {
         stage('Checkout') {
             steps {
+                // Use master branch for your repo
                 git url: 'https://github.com/hcprajwal9901/task_2.git', branch: 'master'
             }
         }
@@ -32,7 +33,7 @@ pipeline {
 
     post {
         success {
-            echo 'Pipeline completed successfully!'
+            echo 'Pipeline completed successfully! Your app should be accessible at http://localhost:8080'
         }
         failure {
             echo 'Pipeline failed!'
