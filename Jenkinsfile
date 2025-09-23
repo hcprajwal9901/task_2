@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     environment {
-        IMAGE_NAME = "simple-node-app"
+        IMAGE_NAME = "task_2"
         IMAGE_TAG = "latest"
     }
 
