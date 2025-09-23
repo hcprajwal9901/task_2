@@ -25,7 +25,7 @@ pipeline {
                 bat """
                 docker stop %IMAGE_NAME% || exit 0
                 docker rm %IMAGE_NAME% || exit 0
-                docker run -d -p 8080:8080 --name %IMAGE_NAME% %IMAGE_NAME%:%IMAGE_TAG%
+                docker run -d -p 3000:8080 --name %IMAGE_NAME% %IMAGE_NAME%:%IMAGE_TAG%
                 """
             }
         }
